@@ -23,8 +23,7 @@ function Home({ className }: HomeProps) {
 
 const StyledHome = styled(Home)`
   text-align: center;
-  font-family: sofia-pro, sans-serif;
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
 `;
 export default StyledHome;
