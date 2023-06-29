@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 interface HomeProps {
   className?: string;
@@ -7,26 +12,19 @@ interface HomeProps {
 function Home({ className }: HomeProps) {
   return (
     <div className={className}>
-      <header>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
+      <NavBar />
+      <Header />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }
 
 const StyledHome = styled(Home)`
   text-align: center;
-  header {
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
+  font-family: sofia-pro, sans-serif;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  overflow: hidden;
 `;
 export default StyledHome;
