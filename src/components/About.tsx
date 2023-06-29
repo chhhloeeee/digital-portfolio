@@ -45,15 +45,12 @@ const StyledAbout = styled(About)`
   font-size: 20px;
   border-top: solid 15px white;
   border-bottom: solid 15px white;
-  padding: 0 6rem;
   > div {
     float: left;
     width: 50%;
     height: 100%;
     padding: 5rem 1rem;
-    h1 {
-      font-family: "Caprasimo", sans-serif;
-    }
+
     strong,
     h1 {
       color: #f12336;

@@ -27,8 +27,9 @@ const Contact = ({ className, id }: ContactProps) => {
 };
 
 const StyledContact = styled(Contact)`
-  min-height: 70vh;
-  background-image: linear-gradient(to right, #f9ca87 0%, #fdf5e5 100%);
+  min-height: 50vh;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #f8812d 0%, #fdf5e5 100%);
   .custom-shape-divider-top-1688052376 {
     top: 0;
     left: 0;
