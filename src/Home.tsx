@@ -13,10 +13,10 @@ function Home({ className }: HomeProps) {
   return (
     <div className={className}>
       <NavBar />
-      <Header />
-      <About />
-      <Projects />
-      <Contact />
+      <Header id="home" />
+      <About id="about" />
+      <Projects id="projects" />
+      <Contact id="contact" />
     </div>
   );
 }

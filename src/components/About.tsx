@@ -3,11 +3,12 @@ import ReactImg from "../Images/undraw_react.svg";
 
 interface AboutProps {
   className?: string;
+  id: string;
 }
 
-const About = ({ className }: AboutProps) => {
+const About = ({ className, id }: AboutProps) => {
   return (
-    <div className={className}>
+    <div className={className} id={id}>
       <div>
         <h1>Hello!</h1>
         <p>
