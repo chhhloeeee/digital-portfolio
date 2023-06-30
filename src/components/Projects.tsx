@@ -24,6 +24,9 @@ const StyledProjects = styled(Projects)`
   > div {
     padding-top: 2rem;
   }
+  h1 {
+    color: #d41919;
+  }
 `;
 
 export default StyledProjects;
