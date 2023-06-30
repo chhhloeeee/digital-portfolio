@@ -24,6 +24,9 @@ const StyledHeader = styled(Header)`
   color: black;
   font-size: 70px;
   background-image: url(${OrgangeGradient});
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 3rem;
   p {
     font-family: "Poppins", sans-serif;
     font-size: 30px;

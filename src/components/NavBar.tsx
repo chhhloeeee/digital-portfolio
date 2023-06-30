@@ -25,7 +25,7 @@ const StyledNavBar = styled(NavBar)`
   background-color: white;
   position: fixed;
   top: 0;
-  width: 95%;
+  width: 100%;
   z-index: 1;
 
   a {
