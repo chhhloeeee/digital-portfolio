@@ -27,9 +27,17 @@ const Contact = ({ className, id }: ContactProps) => {
 };
 
 const StyledContact = styled(Contact)`
-  min-height: 50vh;
+  position: relative;
+  height: 30vh;
   font-size: 20px;
-  background-image: linear-gradient(to right, #f8812d 0%, #fdf5e5 100%);
+  background-color: #d41919;
+
+  h1 {
+    position: absolute;
+    color: white;
+    left: 5%;
+    top: 5%;
+  }
   .custom-shape-divider-top-1688052376 {
     top: 0;
     left: 0;
@@ -46,7 +54,7 @@ const StyledContact = styled(Contact)`
   }
 
   .custom-shape-divider-top-1688052376 .shape-fill {
-    fill: #ffffff;
+    fill: white;
   }
 `;
 

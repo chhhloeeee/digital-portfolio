@@ -9,11 +9,10 @@ const NavBar = ({ className }: NavBarProps) => {
     <div className={className}>
       <ul>
         <a href="#contact">Contact</a>
-
         <a href="#projects">Projects</a>
-
+        <a href="#references">References</a>
+        <a href="#cv">CV</a>
         <a href="#about">About Me</a>
-
         <a href="#home">Home</a>
       </ul>
     </div>

@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import grain from "../Images/grain.svg";
 
 interface AboutProps {
   className?: string;
@@ -44,12 +43,12 @@ const StyledAbout = styled(About)`
   text-align: center;
   > div {
     margin: auto;
-    width: 80%;
+    width: 60%;
     padding: 1rem 1rem;
     font-size: 20px;
     strong,
     h1 {
-      color: #f12336;
+      color: #d41919;
     }
   }
   h1 {
