@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 import CV from "./components/CV";
 import References from "./components/References";
 

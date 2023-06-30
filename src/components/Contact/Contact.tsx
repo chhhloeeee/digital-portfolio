@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import ContactGrid from "./ContactGrid";
 
 interface ContactProps {
   className?: string;
@@ -21,7 +22,8 @@ const Contact = ({ className, id }: ContactProps) => {
           ></path>
         </svg>
       </div>
-      <h1>Contact</h1>
+      <h1>Thank You!</h1>
+      <ContactGrid />
     </div>
   );
 };
@@ -33,10 +35,8 @@ const StyledContact = styled(Contact)`
   background-color: #d41919;
 
   h1 {
-    position: absolute;
+    margin: 0;
     color: white;
-    left: 5%;
-    top: 5%;
   }
   .custom-shape-divider-top-1688052376 {
     top: 0;
