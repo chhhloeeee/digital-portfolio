@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import ReferenceGrid from "./ReferenceGrid";
 
 interface ReferencesProps {
   className?: string;
@@ -10,6 +11,7 @@ const References = ({ className, id }: ReferencesProps) => {
     <div className={className} id={id}>
       <div>
         <h1>References</h1>
+        <ReferenceGrid />
       </div>
     </div>
   );
@@ -21,6 +23,7 @@ const StyledReferences = styled(References)`
   font-size: 20px;
   border-top: solid 15px white;
   border-bottom: solid 15px white;
+  color: #d41919;
   > div {
     padding-top: 2rem;
   }

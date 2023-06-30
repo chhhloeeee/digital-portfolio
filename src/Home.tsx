@@ -5,7 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact/Contact";
 import CV from "./components/CV";
-import References from "./components/References";
+import References from "./components/References/References";
 
 interface HomeProps {
   className?: string;
