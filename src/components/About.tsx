@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
-import ReactImg from "../Images/undraw_react.svg";
 
 interface AboutProps {
   className?: string;
+  id: string;
 }
 
-const About = ({ className }: AboutProps) => {
+const About = ({ className, id }: AboutProps) => {
   return (
-    <div className={className}>
+    <div className={className} id={id}>
       <div>
         <h1>Hello!</h1>
         <p>
@@ -33,39 +33,27 @@ const About = ({ className }: AboutProps) => {
           sewing as well as teaching myself Spanish which is going very well.
         </p>
       </div>
-      <img src={ReactImg} alt="girl with React logo"></img>
     </div>
   );
 };
 
 const StyledAbout = styled(About)`
-  position: relative;
-  min-height: 70vh;
-  font-size: 20px;
-  border-top: solid 15px white;
-  border-bottom: solid 15px white;
-  padding: 0 6rem;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
   > div {
-    float: left;
-    width: 50%;
-    height: 100%;
-    padding: 5rem 1rem;
-    h1 {
-      font-family: "Caprasimo", sans-serif;
-    }
+    margin: auto;
+    width: 60%;
+    padding: 1rem 1rem;
+    font-size: 20px;
     strong,
     h1 {
-      color: #f12336;
+      color: #d41919;
     }
   }
-  img {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 400px;
-    padding-left: 10rem;
+  h1 {
+    padding: 1rem 1rem;
+    font-size: 90px;
   }
 `;
 

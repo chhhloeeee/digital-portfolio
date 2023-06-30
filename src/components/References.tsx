@@ -1,21 +1,21 @@
 import { styled } from "styled-components";
 
-interface ProjectsProps {
+interface ReferencesProps {
   className?: string;
   id: string;
 }
 
-const Projects = ({ className, id }: ProjectsProps) => {
+const References = ({ className, id }: ReferencesProps) => {
   return (
     <div className={className} id={id}>
       <div>
-        <h1>Projects</h1>
+        <h1>References</h1>
       </div>
     </div>
   );
 };
 
-const StyledProjects = styled(Projects)`
+const StyledReferences = styled(References)`
   position: relative;
   min-height: 70vh;
   font-size: 20px;
@@ -26,4 +26,4 @@ const StyledProjects = styled(Projects)`
   }
 `;
 
-export default StyledProjects;
+export default StyledReferences;
