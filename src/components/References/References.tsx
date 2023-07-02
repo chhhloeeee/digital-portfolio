@@ -27,6 +27,16 @@ const StyledReferences = styled(References)`
   > div {
     padding-top: 2rem;
   }
+  @media (max-width: 750px) {
+    > div {
+      padding-top: 3rem;
+    }
+  }
+  @media (max-width: 600px) {
+    > div {
+      padding-top: 6rem;
+    }
+  }
 `;
 
 export default StyledReferences;

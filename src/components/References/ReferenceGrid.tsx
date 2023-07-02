@@ -81,6 +81,9 @@ const StyledReferenceGrid = styled(ReferenceGrid)`
   h2 {
     color: #d41919;
   }
+  @media (max-width: 750px) {
+    display: block;
+  }
 `;
 
 export default StyledReferenceGrid;

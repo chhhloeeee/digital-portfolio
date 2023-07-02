@@ -30,7 +30,7 @@ const Contact = ({ className, id }: ContactProps) => {
 
 const StyledContact = styled(Contact)`
   position: relative;
-  height: 30vh;
+  height: 35vh;
   font-size: 20px;
   background-color: #d41919;
 
@@ -55,6 +55,9 @@ const StyledContact = styled(Contact)`
 
   .custom-shape-divider-top-1688052376 .shape-fill {
     fill: white;
+  }
+  @media (max-width: 750px) {
+    height: 50vh;
   }
 `;
 

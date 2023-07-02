@@ -79,7 +79,7 @@ const StyledCV = styled(CV)`
   grid-template-columns: auto auto auto;
   margin: auto;
   width: 90%;
-  padding-top: 3rem;
+  padding-top: 4rem;
   h1 {
     font-size: 30px;
     color: #d41919;
@@ -96,6 +96,20 @@ const StyledCV = styled(CV)`
     }
     p {
       margin: 0;
+    }
+  }
+  @media (max-width: 750px) {
+    display: block;
+    > div {
+      ul {
+        padding-right: 2rem;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding-top: 7rem;
+    h1 {
+      font-size: 25px;
     }
   }
 `;
