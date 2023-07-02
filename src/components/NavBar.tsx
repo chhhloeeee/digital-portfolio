@@ -36,6 +36,10 @@ const StyledNavBar = styled(NavBar)`
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
+
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
   }
 `;
 
