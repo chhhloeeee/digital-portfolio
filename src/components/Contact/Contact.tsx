@@ -57,7 +57,7 @@ const StyledContact = styled(Contact)`
     fill: white;
   }
   @media (max-width: 750px) {
-    height: 45vh;
+    height: 50vh;
   }
 `;
 
