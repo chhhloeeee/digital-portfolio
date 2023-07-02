@@ -70,6 +70,9 @@ const StyledProjects = styled(Projects)`
   border-bottom: solid 15px white;
   > div {
     padding-top: 2rem;
+    @media (max-width: 750px) {
+      padding-top: 6rem;
+    }
   }
   h1 {
     color: #d41919;

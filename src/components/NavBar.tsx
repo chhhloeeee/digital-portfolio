@@ -42,7 +42,7 @@ const StyledNavBar = styled(NavBar)`
     font-weight: bold;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 610px) {
     ul {
       display: table;
     }

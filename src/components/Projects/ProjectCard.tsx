@@ -76,6 +76,11 @@ const StyledProjectCard = styled(ProjectCard)`
   @media (max-width: 1000px) {
     display: block;
   }
+  @media (max-width: 750px) {
+    img {
+      width: 500px;
+    }
+  }
   @media (max-width: 600px) {
     img {
       width: 400px;

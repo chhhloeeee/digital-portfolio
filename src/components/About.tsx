@@ -63,12 +63,17 @@ const StyledAbout = styled(About)`
       width: 80%;
     }
   }
+  @media (max-width: 750px) {
+    > div {
+      padding-top: 2rem;
+    }
+  }
   @media (max-width: 600px) {
     h1 {
       font-size: 40px;
     }
     > div {
-      padding-top: 2rem;
+      padding-top: 4rem;
       width: 90%;
     }
   }
