@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import CV from "./components/CV";
+import CV from "./components/CV/CV";
 import References from "./components/References/References";
 
 interface HomeProps {

@@ -11,7 +11,7 @@ const ChloePicture = ({ className }: ChloePictureProps) => {
       <div>
         <img src={profile} alt="chloe" width="200" />
         <div>
-          <p>Front End Developer</p>
+          <h2>Front End Developer</h2>
         </div>
       </div>
     </div>
@@ -19,12 +19,6 @@ const ChloePicture = ({ className }: ChloePictureProps) => {
 };
 
 const StyledChloePicture = styled(ChloePicture)`
-  background-color: white;
-  position: relative;
-  > div {
-    position: absolute;
-    font-weight: bold;
-  }
   img {
     height: 200px;
     object-fit: cover;

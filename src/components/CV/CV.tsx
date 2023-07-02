@@ -1,9 +1,5 @@
 import { styled } from "styled-components";
-import ChloePicture from "./CV/ChloePicture";
-import ContactMe from "./CV/ContactMe";
-import WorkExperience from "./CV/WorkExperience";
-import Skills from "./CV/Skills";
-import Education from "./CV/Education";
+import ChloePicture from "./ChloePicture";
 
 interface CVProps {
   className?: string;
@@ -13,31 +9,19 @@ interface CVProps {
 const CV = ({ className, id }: CVProps) => {
   return (
     <div className={className} id={id}>
-      <ChloePicture />
-      <ContactMe>
-        <h1>Contact Me</h1>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/chloeebakerr/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedin.com/in/chloeebakerr
-          </a>
-        </p>
-        <p>
-          <a
-            href="mailto:isabelchloe2@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            isabelchloe2@gmail.com
-          </a>
-        </p>
-        <p>07889879826</p>
-        <p>Location: Lymington</p>
-      </ContactMe>
-      <WorkExperience>
+      <div>
+        <ChloePicture />
+        <h1>Skills</h1>
+        <ul>
+          <li>Golang, JavaScript, HTML, CSS React, NextJS</li>
+          <li>
+            Certification in ‘RESTful API web services testing & documentation
+            with Swagger’
+          </li>
+          <li>Certification in ‘Mastering Go Programming’</li>
+        </ul>
+      </div>
+      <div>
         <h1>Work Experience</h1>
         <h2>Apprentice/ Front End Developer</h2>
         <h2>
@@ -71,19 +55,8 @@ const CV = ({ className, id }: CVProps) => {
             <li> Developed AWS knowledge</li>
           </ul>
         </p>
-      </WorkExperience>
-      <Skills>
-        <h1>Skills</h1>
-        <ul>
-          <li>Golang, JavaScript, HTML, CSS React, NextJS</li>
-          <li>
-            Certification in ‘RESTful API web services testing & documentation
-            with Swagger’
-          </li>
-          <li>Certification in ‘Mastering Go Programming’</li>
-        </ul>
-      </Skills>
-      <Education>
+      </div>
+      <div>
         <h1>Education History</h1>
         <h2>University of Winchester</h2>
         <p>2020- Present</p>
@@ -91,31 +64,39 @@ const CV = ({ className, id }: CVProps) => {
           Digital and Technology Solutions Degree Apprenticeship: Software
           Engineering Predicted 1st, course ending July 2023
         </p>
+        <br />
         <h2>Peter Symonds Sixth form College</h2>
         <p>2018-2020</p>
         <p>D** in IT and A in business studies</p>
-      </Education>
+      </div>
     </div>
   );
 };
 
 const StyledCV = styled(CV)`
   position: relative;
-  min-height: 80vh;
-  font-size: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin: auto;
   width: 90%;
   padding-top: 3rem;
-  overflow-y: scroll;
   h1 {
     font-size: 30px;
     color: #d41919;
   }
-  h2 {
-    font-size: 20px;
-  }
+
   > div {
     padding-top: 2rem;
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    li {
+      font-size: 18px;
+    }
+    p {
+      margin: 0;
+    }
   }
 `;
 

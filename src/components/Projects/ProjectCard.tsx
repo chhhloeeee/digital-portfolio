@@ -22,7 +22,7 @@ const ProjectCard = ({
   return (
     <div className={className}>
       <div>
-        <img src={src} alt={alt} width="700"></img>
+        <img src={src} alt={alt}></img>
       </div>
       <div>
         <h2>{title}</h2>
@@ -38,21 +38,21 @@ const ProjectCard = ({
 const StyledProjectCard = styled(ProjectCard)`
   position: relative;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   margin: auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
   img {
     border-radius: 20px;
+    width: 700px;
   }
 
   > div:nth-last-of-type(1) {
     justify-items: center;
-    padding-left: 15rem;
-    max-width: 500px;
+    padding: 40px;
     h2 {
       color: #d41919;
     }
@@ -66,6 +66,25 @@ const StyledProjectCard = styled(ProjectCard)`
     font-family: inherit;
     padding: 10px;
     cursor: pointer;
+  }
+
+  @media (max-width: 1200px) {
+    img {
+      width: 600px;
+    }
+  }
+  @media (max-width: 1000px) {
+    display: block;
+  }
+  @media (max-width: 600px) {
+    img {
+      width: 400px;
+    }
+  }
+  @media (max-width: 450px) {
+    img {
+      width: 300px;
+    }
   }
 `;
 export default StyledProjectCard;
