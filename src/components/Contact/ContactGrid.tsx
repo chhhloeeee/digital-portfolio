@@ -52,6 +52,15 @@ const StyledContactGrid = styled(ContactGrid)`
   > div {
     text-align: center;
   }
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+  @media (max-width: 750px) {
+    display: block;
+  }
 `;
 
 export default StyledContactGrid;
