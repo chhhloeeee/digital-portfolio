@@ -10,19 +10,17 @@ const ChloePicture = ({ className }: ChloePictureProps) => {
     <div className={className}>
       <div>
         <img src={profile} alt="chloe" width="200" />
-        <div>
-          <h2>Front End Developer</h2>
-        </div>
       </div>
     </div>
   );
 };
 
 const StyledChloePicture = styled(ChloePicture)`
+  padding: 0;
   img {
     height: 200px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 100%;
   }
 `;
 

@@ -5,6 +5,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import CV from "./components/CV/CV";
 import References from "./components/References/References";
+import StyledHeader from "./components/Header";
 
 interface HomeProps {
   className?: string;
@@ -14,6 +15,7 @@ function Home({ className }: HomeProps) {
   return (
     <div className={className}>
       <NavBar />
+      <StyledHeader id="home" />
       <About id="about" />
       <CV id="cv" />
       <References id="references" />
@@ -25,7 +27,7 @@ function Home({ className }: HomeProps) {
 
 const StyledHome = styled(Home)`
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", sans-serif;
   overflow: hidden;
 `;
 export default StyledHome;

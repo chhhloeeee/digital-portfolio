@@ -8,6 +8,7 @@ const NavBar = ({ className }: NavBarProps) => {
   return (
     <div className={className}>
       <ul>
+        <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#cv">CV</a>
         <a href="#references">References</a>
@@ -25,6 +26,7 @@ const StyledNavBar = styled(NavBar)`
   top: 0;
   width: 100%;
   z-index: 1;
+  border-bottom: 2px solid #f5f5f5;
 
   ul {
     display: table;
@@ -35,9 +37,9 @@ const StyledNavBar = styled(NavBar)`
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
   }
 `;
