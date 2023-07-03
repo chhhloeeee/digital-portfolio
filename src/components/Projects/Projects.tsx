@@ -66,8 +66,9 @@ const StyledProjects = styled(Projects)`
   position: relative;
   min-height: 70vh;
   font-size: 20px;
-  border-top: solid 15px white;
-  border-bottom: solid 15px white;
+  text-align: left;
+  width: 40%;
+  margin: auto;
   > div {
     padding-top: 2rem;
     @media (max-width: 750px) {

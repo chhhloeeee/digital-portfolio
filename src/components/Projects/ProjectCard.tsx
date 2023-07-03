@@ -37,13 +37,7 @@ const ProjectCard = ({
 
 const StyledProjectCard = styled(ProjectCard)`
   position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: auto;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding-bottom: 3rem;
   img {
     border-radius: 20px;
@@ -62,7 +56,7 @@ const StyledProjectCard = styled(ProjectCard)`
     font-size: 15px;
     background-color: white;
     border: 3px solid #d41919;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: inherit;
     padding: 10px;
     cursor: pointer;
@@ -72,9 +66,6 @@ const StyledProjectCard = styled(ProjectCard)`
     img {
       width: 600px;
     }
-  }
-  @media (max-width: 1000px) {
-    display: block;
   }
   @media (max-width: 750px) {
     img {
