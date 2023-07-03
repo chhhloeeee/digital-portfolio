@@ -11,8 +11,8 @@ const NavBar = ({ className }: NavBarProps) => {
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#cv">CV</a>
-        <a href="#references">References</a>
         <a href="#projects">Projects</a>
+        <a href="#references">References</a>
         <a href="#contact">Contact</a>
       </ul>
     </div>

@@ -33,6 +33,7 @@ const About = ({ className, id }: AboutProps) => {
 };
 
 const StyledAbout = styled(About)`
+  padding-top: 60px;
   > div {
     margin: auto;
     width: 40%;
@@ -45,32 +46,6 @@ const StyledAbout = styled(About)`
       color: #d41919;
     }
   }
-  h1 {
-    padding: 1rem 1rem;
-    font-size: 90px;
-  }
-  /* @media (max-width: 1200px) {
-    h1 {
-      font-size: 60px;
-    }
-    > div {
-      width: 80%;
-    }
-  }
-  @media (max-width: 750px) {
-    > div {
-      padding-top: 2rem;
-    }
-  }
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 40px;
-    }
-    > div {
-      padding-top: 4rem;
-      width: 90%;
-    }
-  } */
 `;
 
 export default StyledAbout;

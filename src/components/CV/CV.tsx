@@ -74,7 +74,7 @@ const StyledCV = styled(CV)`
   display: block;
   padding-top: 119px;
   background-color: #f5f5f5;
-  padding-bottom: 134px;
+  padding-bottom: 84px;
   text-align: left;
 
   h1 {

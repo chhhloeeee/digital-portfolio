@@ -18,8 +18,8 @@ function Home({ className }: HomeProps) {
       <StyledHeader id="home" />
       <About id="about" />
       <CV id="cv" />
-      <References id="references" />
       <Projects id="projects" />
+      <References id="references" />
       <Contact id="contact" />
     </div>
   );

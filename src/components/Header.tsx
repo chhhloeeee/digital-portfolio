@@ -33,7 +33,7 @@ const StyledHeader = styled(Header)`
   align-items: center;
   width: 40%;
   border-bottom: 2px solid #f5f5f5;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   div:nth-last-of-type(1) {
     text-align: left;
     font-weight: bold;
