@@ -8,7 +8,6 @@ const NavBar = ({ className }: NavBarProps) => {
   return (
     <div className={className}>
       <ul>
-        <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#cv">CV</a>
         <a href="#references">References</a>
@@ -28,29 +27,18 @@ const StyledNavBar = styled(NavBar)`
   z-index: 1;
 
   ul {
-    float: right;
-    padding: 0 16px;
+    display: table;
   }
+  ul,
   a {
-    float: left;
-    display: block;
+    float: none;
+    display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
-  }
-
-  @media (max-width: 610px) {
-    ul {
-      display: table;
-    }
-    ul,
-    a {
-      display: inline-block;
-      float: none;
-    }
   }
 `;
 
