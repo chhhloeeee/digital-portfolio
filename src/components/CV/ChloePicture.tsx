@@ -26,6 +26,18 @@ const StyledChloePicture = styled(ChloePicture)`
       width: 150px;
     }
   }
+  &:before {
+    content: "";
+    width: 215px;
+    height: 215px;
+    border: 4px dotted red;
+    transform: translateY(-51%) translateX(-50%);
+    top: 64.4%;
+    left: 17.4%;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+  }
 `;
 
 export default StyledChloePicture;
