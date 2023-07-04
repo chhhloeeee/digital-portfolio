@@ -67,6 +67,11 @@ const StyledProjectCard = styled(ProjectCard)`
       font-family: inherit;
       padding: 15px 30px;
       cursor: pointer;
+      &:hover {
+        background-color: #d41919;
+        color: white;
+        transition: 0.5s ease;
+      }
     }
   }
 

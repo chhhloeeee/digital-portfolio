@@ -41,6 +41,11 @@ const StyledNavBar = styled(NavBar)`
     font-size: 16px;
     font-weight: bold;
   }
+
+  a:hover {
+    color: #d41919;
+    transition: 0.5s ease;
+  }
 `;
 
 export default StyledNavBar;
