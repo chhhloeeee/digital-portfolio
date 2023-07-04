@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import OrgangeGradient from "../Images/orangeGradient.png";
+import ChloePicture from "./CV/ChloePicture";
 
 interface HeaderProps {
   className?: string;
@@ -9,54 +9,43 @@ interface HeaderProps {
 const Header = ({ className, id }: HeaderProps) => {
   return (
     <div className={className} id={id}>
-      <h1>Portfolio</h1>
-      <p>Chloe Baker | Software Developer</p>
+      <ChloePicture />
+      <div>
+        <h1>Hello!</h1>
+        <p>
+          I'm <strong>Chloe</strong>, a <strong>Frontend Developer</strong>{" "}
+          based in Lymington <br /> with a passion for meaningful and usable UI.
+        </p>
+      </div>
     </div>
   );
 };
 
 const StyledHeader = styled(Header)`
-  height: 100vh;
+  padding-top: 200px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  grid-gap: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: black;
-  background-image: url(${OrgangeGradient});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  padding-bottom: 3rem;
-  h1 {
-    font-size: 120px;
-    margin: 0;
-  }
-  p {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    margin: 0;
-  }
-  @media (max-width: 1000px) {
-    background-size: cover;
+  align-items: center;
+  width: 40%;
+  border-bottom: 1px solid #4d4d4e;
+  padding-bottom: 60px;
+  div:nth-last-of-type(1) {
+    text-align: left;
+    font-weight: bold;
     h1 {
-      font-size: 90px;
-    }
-  }
-  @media (max-width: 750px) {
-    h1 {
-      font-size: 80px;
+      font-size: 70px;
+      color: #d41919;
     }
     p {
-      font-size: 25px;
+      font-size: 22px;
     }
-  }
-  @media (max-width: 450px) {
-    padding-top: 1rem;
-    h1 {
-      font-size: 60px;
-    }
-    p {
-      font-size: 20px;
+    strong {
+      color: #d41919;
     }
   }
 `;

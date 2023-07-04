@@ -1,5 +1,8 @@
 import { styled } from "styled-components";
-import ChloePicture from "./ChloePicture";
+import { BorderWrapper } from "../BorderWrapper";
+import { DivWrapper } from "../DivWrapper";
+import File from "../icons/File";
+import { IconWrapper } from "../IconWrapper";
 
 interface CVProps {
   className?: string;
@@ -10,28 +13,26 @@ const CV = ({ className, id }: CVProps) => {
   return (
     <div className={className} id={id}>
       <div>
-        <ChloePicture />
-        <h1>Skills</h1>
-        <ul>
-          <li>Golang, JavaScript, HTML, CSS React, NextJS</li>
-          <li>
-            Certification in ‘RESTful API web services testing & documentation
-            with Swagger’
-          </li>
-          <li>Certification in ‘Mastering Go Programming’</li>
-        </ul>
-      </div>
-      <div>
-        <h1>Work Experience</h1>
-        <h2>Apprentice/ Front End Developer</h2>
-        <h2>
-          Huler,{" "}
-          <a href="huler.io" target="_blank" rel="noopener noreferrer">
-            huler.io
-          </a>
-        </h2>
-        <p>
-          January 2022 to July 2023
+        <IconWrapper>
+          <File />
+          <h1>CV</h1>
+        </IconWrapper>
+        <DivWrapper>
+          <h2>Skills</h2>
+          <ul>
+            <li>Golang, JavaScript, HTML, CSS React, NextJS</li>
+            <li>
+              Certification in ‘RESTful API web services testing & documentation
+              with Swagger’
+            </li>
+            <li>Certification in ‘Mastering Go Programming’</li>
+          </ul>
+        </DivWrapper>
+        <BorderWrapper>
+          <h2>Work Experience</h2>
+          <h3>Huler</h3>
+          <h4>Apprentice/ Front End Developer</h4>
+          <h5>JANUARY 2022 to JULY 2023</h5>
           <ul>
             <li>
               {" "}
@@ -54,20 +55,20 @@ const CV = ({ className, id }: CVProps) => {
             <li>Conduct & contribute to code reviews</li>
             <li> Developed AWS knowledge</li>
           </ul>
-        </p>
-      </div>
-      <div>
-        <h1>Education History</h1>
-        <h2>University of Winchester</h2>
-        <p>2020- Present</p>
-        <p>
-          Digital and Technology Solutions Degree Apprenticeship: Software
-          Engineering Predicted 1st, course ending July 2023
-        </p>
-        <br />
-        <h2>Peter Symonds Sixth form College</h2>
-        <p>2018-2020</p>
-        <p>D** in IT and A in business studies</p>
+        </BorderWrapper>
+        <DivWrapper>
+          <h2>Education</h2>
+          <h3>University of Winchester</h3>
+          <h5>2020-PRESENT</h5>
+          <p>
+            Digital and Technology Solutions Degree Apprenticeship: Software
+            Engineering Predicted 1st, course ending July 2023
+          </p>
+          <br />
+          <h3>Peter Symonds Sixth form College</h3>
+          <h5>2018-2020</h5>
+          <p>D** in IT and A in business studies</p>
+        </DivWrapper>
       </div>
     </div>
   );
@@ -75,42 +76,53 @@ const CV = ({ className, id }: CVProps) => {
 
 const StyledCV = styled(CV)`
   position: relative;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: auto;
-  width: 90%;
-  padding-top: 4rem;
+  display: block;
+  padding-top: 138px;
+  background-color: #f5f5f5;
+  padding-bottom: 84px;
+  text-align: left;
+
   h1 {
-    font-size: 30px;
-    color: #d41919;
+    font-size: 40px;
   }
 
   > div {
-    padding-top: 2rem;
+    margin: auto;
+    width: 40%;
     h2 {
-      font-size: 20px;
+      font-size: 28px;
       margin: 0;
+      padding-bottom: 30px;
+    }
+    h3 {
+      font-size: 24px;
+      color: #d41919;
+      margin-bottom: 4px;
+    }
+    h4 {
+      margin: 0;
+      margin-bottom: 4px;
+    }
+
+    h5 {
+      font-size: 14px;
+      color: #88888a;
+      margin-top: 0;
     }
     li {
       font-size: 18px;
+      line-height: 3;
+      font-weight: 600;
     }
     p {
       margin: 0;
+      font-size: 18px;
+      line-height: 2;
+      font-weight: 600;
     }
   }
-  @media (max-width: 750px) {
-    display: block;
-    > div {
-      ul {
-        padding-right: 2rem;
-      }
-    }
-  }
-  @media (max-width: 600px) {
-    padding-top: 7rem;
-    h1 {
-      font-size: 25px;
-    }
+  svg {
+    padding-right: 21px;
   }
 `;
 

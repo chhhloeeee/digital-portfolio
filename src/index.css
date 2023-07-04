@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -9,10 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #4d4d4e;
+}
+h1 {
+  font-size: 40px;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #4d4d4e;
 }
 
 code {
