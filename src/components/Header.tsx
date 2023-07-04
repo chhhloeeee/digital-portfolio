@@ -34,7 +34,7 @@ const StyledHeader = styled(Header)`
   width: 40%;
   border-bottom: 1px solid #4d4d4e;
   padding-bottom: 60px;
-  div:nth-last-of-type(1) {
+  > div {
     text-align: left;
     font-weight: bold;
     h1 {
@@ -46,6 +46,32 @@ const StyledHeader = styled(Header)`
     }
     strong {
       color: #d41919;
+    }
+  }
+  @media (max-width: 1000px) {
+    width: 60%;
+  }
+  @media (max-width: 750px) {
+    width: 70%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+    padding-bottom: 70px;
+    > div {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    display: block;
+    margin: auto;
+    align-items: center;
+    > div {
+      text-align: center;
     }
   }
 `;
