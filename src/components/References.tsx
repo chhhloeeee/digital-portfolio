@@ -82,7 +82,7 @@ const StyledReferences = styled(References)`
   padding-top: 138px;
   background-color: #f5f5f5;
   padding-bottom: 84px;
-  text-align: left;
+  text-align: justify;
   > div {
     margin: auto;
     width: 40%;
@@ -107,16 +107,21 @@ const StyledReferences = styled(References)`
   svg {
     padding-right: 21px;
   }
-  /* @media (max-width: 750px) {
+  @media (max-width: 1000px) {
     > div {
-      padding-top: 3rem;
+      width: 60%;
+    }
+  }
+  @media (max-width: 750px) {
+    > div {
+      width: 70%;
     }
   }
   @media (max-width: 600px) {
     > div {
-      padding-top: 6rem;
+      width: 80%;
     }
-  } */
+  }
 `;
 
 export default StyledReferences;

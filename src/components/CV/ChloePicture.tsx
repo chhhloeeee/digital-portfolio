@@ -21,6 +21,10 @@ const StyledChloePicture = styled(ChloePicture)`
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
+    @media (max-width: 600px) {
+      height: 150px;
+      width: 150px;
+    }
   }
 `;
 

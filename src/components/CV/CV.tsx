@@ -124,6 +124,25 @@ const StyledCV = styled(CV)`
   svg {
     padding-right: 21px;
   }
+  @media (max-width: 1000px) {
+    > div {
+      width: 60%;
+    }
+  }
+  @media (max-width: 750px) {
+    > div {
+      width: 70%;
+    }
+  }
+  @media (max-width: 600px) {
+    > div {
+      width: 80%;
+      text-align: justify;
+      ul {
+        padding-left: 0%;
+      }
+    }
+  }
 `;
 
 export default StyledCV;

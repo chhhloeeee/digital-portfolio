@@ -115,15 +115,12 @@ const Projects = ({ className, id }: ProjectsProps) => {
 const StyledProjects = styled(Projects)`
   position: relative;
   min-height: 70vh;
-  text-align: left;
+  text-align: justify;
   display: flex;
   justify-content: center;
   align-items: center;
   > div {
     padding-top: 138px;
-    @media (max-width: 750px) {
-      padding-top: 6rem;
-    }
   }
   svg {
     padding-right: 21px;
