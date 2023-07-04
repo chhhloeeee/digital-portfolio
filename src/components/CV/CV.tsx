@@ -17,7 +17,7 @@ const CV = ({ className, id }: CVProps) => {
           <File />
           <h1>CV</h1>
         </IconWrapper>
-        <DivWrapper>
+        <BorderWrapper>
           <h2>Skills</h2>
           <ul>
             <li>Golang, JavaScript, HTML, CSS React, NextJS</li>
@@ -27,7 +27,7 @@ const CV = ({ className, id }: CVProps) => {
             </li>
             <li>Certification in ‘Mastering Go Programming’</li>
           </ul>
-        </DivWrapper>
+        </BorderWrapper>
         <BorderWrapper>
           <h2>Work Experience</h2>
           <h3>Huler</h3>
@@ -108,6 +108,7 @@ const StyledCV = styled(CV)`
       font-size: 14px;
       color: #88888a;
       margin-top: 0;
+      letter-spacing: 1.1px;
     }
     li {
       font-size: 18px;

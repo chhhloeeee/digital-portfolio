@@ -26,7 +26,7 @@ const StyledNavBar = styled(NavBar)`
   top: 0;
   width: 100%;
   z-index: 1;
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid rgba(77, 77, 78, 0.2);
 
   ul {
     display: table;
