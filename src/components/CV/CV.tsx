@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { CVWrapper } from "../BorderWrapper";
+import { BorderWrapper } from "../BorderWrapper";
 import { DivWrapper } from "../DivWrapper";
 
 interface CVProps {
@@ -23,7 +23,7 @@ const CV = ({ className, id }: CVProps) => {
             <li>Certification in ‘Mastering Go Programming’</li>
           </ul>
         </DivWrapper>
-        <CVWrapper>
+        <BorderWrapper>
           <h2>Work Experience</h2>
           <h3>Huler</h3>
           <h4>Apprentice/ Front End Developer</h4>
@@ -50,7 +50,7 @@ const CV = ({ className, id }: CVProps) => {
             <li>Conduct & contribute to code reviews</li>
             <li> Developed AWS knowledge</li>
           </ul>
-        </CVWrapper>
+        </BorderWrapper>
         <DivWrapper>
           <h2>Education</h2>
           <h3>University of Winchester</h3>
@@ -84,7 +84,6 @@ const StyledCV = styled(CV)`
   > div {
     margin: auto;
     width: 40%;
-    color: #4d4d4e;
     h2 {
       font-size: 28px;
       margin: 0;

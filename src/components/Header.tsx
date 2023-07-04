@@ -32,7 +32,7 @@ const StyledHeader = styled(Header)`
   justify-content: center;
   align-items: center;
   width: 40%;
-  border-bottom: 2px solid #f5f5f5;
+  border-bottom: 1px solid #4d4d4e;
   padding-bottom: 60px;
   div:nth-last-of-type(1) {
     text-align: left;

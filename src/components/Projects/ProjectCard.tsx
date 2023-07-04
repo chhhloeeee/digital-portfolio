@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { styled } from "styled-components";
 
 interface ProjectCardProps {
@@ -5,7 +6,7 @@ interface ProjectCardProps {
   src: string;
   alt: string;
   title: string;
-  content: string;
+  content: ReactElement;
   bttnText: string;
   href: string;
 }
@@ -21,11 +22,11 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className={className}>
+      <h2>{title}</h2>
       <div>
         <img src={src} alt={alt}></img>
       </div>
       <div>
-        <h2>{title}</h2>
         <p>{content}</p>
         <a href={href} target="_blank" rel="noopener noreferrer">
           {bttnText}
@@ -39,26 +40,35 @@ const StyledProjectCard = styled(ProjectCard)`
   position: relative;
   display: block;
   padding-bottom: 3rem;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
   img {
     border-radius: 20px;
-    width: 700px;
+    width: 860px;
   }
 
   > div:nth-last-of-type(1) {
     justify-items: center;
-    padding: 40px;
-    h2 {
-      color: #d41919;
-    }
+    width: 860px;
+    line-height: 2;
+    font-size: 18px;
+  }
+
+  p {
+    padding-bottom: 24px;
   }
   a {
     min-width: 150px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     background-color: white;
-    border: 3px solid #d41919;
+    border: 4px solid #d41919;
     border-radius: 10px;
     font-family: inherit;
-    padding: 10px;
+    padding: 15px 30px;
     cursor: pointer;
   }
 
