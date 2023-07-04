@@ -1,4 +1,7 @@
 import { styled } from "styled-components";
+import LinkedIn from "../icons/LinkedIn";
+import Mail from "../icons/Mail";
+import Phone from "../icons/Phone";
 
 interface ContactProps {
   className?: string;
@@ -9,7 +12,7 @@ const Contact = ({ className, id }: ContactProps) => {
   return (
     <div className={className} id={id}>
       <div>
-        {" "}
+        <LinkedIn />
         <p>
           <a
             href="https://www.linkedin.com/in/chloeebakerr/"
@@ -21,6 +24,7 @@ const Contact = ({ className, id }: ContactProps) => {
         </p>
       </div>
       <div>
+        <Mail />
         <p>
           <a
             href="mailto:isabelchloe2@gmail.com"
@@ -32,7 +36,7 @@ const Contact = ({ className, id }: ContactProps) => {
         </p>
       </div>
       <div>
-        {" "}
+        <Phone />
         <p>07889879826</p>
       </div>
     </div>
@@ -53,18 +57,20 @@ const StyledContact = styled(Contact)`
   grid-gap: 75px;
   p,
   a {
+    float: right;
     color: white;
   }
 
   > div {
-    text-align: center;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  @media (max-width: 1200px) {
-    width: 80%;
+  svg {
+    padding-right: 21px;
   }
-  @media (max-width: 1000px) {
-    width: 100%;
-  }
+
   @media (max-width: 750px) {
     display: block;
   }

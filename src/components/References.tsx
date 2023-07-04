@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 import { DivWrapper } from "./DivWrapper";
 import { BorderWrapper } from "./BorderWrapper";
+import Award from "./icons/Award";
+import { IconWrapper } from "./IconWrapper";
 
 interface ReferencesProps {
   className?: string;
@@ -11,7 +13,10 @@ const References = ({ className, id }: ReferencesProps) => {
   return (
     <div className={className} id={id}>
       <div>
-        <h1>References</h1>
+        <IconWrapper>
+          <Award />
+          <h1>References</h1>
+        </IconWrapper>
         <DivWrapper>
           <p>
             “Like many tech businesses globally, challenging economic
@@ -82,7 +87,6 @@ const StyledReferences = styled(References)`
     margin: auto;
     width: 40%;
   }
-
   p {
     font-size: 18px;
     line-height: 2;
@@ -99,6 +103,9 @@ const StyledReferences = styled(References)`
   }
   h3 {
     font-size: 14px;
+  }
+  svg {
+    padding-right: 21px;
   }
   /* @media (max-width: 750px) {
     > div {

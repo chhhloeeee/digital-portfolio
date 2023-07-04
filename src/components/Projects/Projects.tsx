@@ -6,6 +6,8 @@ import HulerLoan from "../../Images/hulerLoan.png";
 import PricingPage from "../../Images/pricingPage.png";
 import { DivWrapper } from "../DivWrapper";
 import { BorderWrapper } from "../BorderWrapper";
+import Briefcase from "../icons/Briefcase";
+import { IconWrapper } from "../IconWrapper";
 
 interface ProjectsProps {
   className?: string;
@@ -61,7 +63,10 @@ const Projects = ({ className, id }: ProjectsProps) => {
   return (
     <div className={className} id={id}>
       <div>
-        <h1>Projects</h1>
+        <IconWrapper>
+          <Briefcase />
+          <h1>Projects</h1>
+        </IconWrapper>
         <DivWrapper>
           <ProjectCard
             src={HulerDays}
@@ -119,6 +124,9 @@ const StyledProjects = styled(Projects)`
     @media (max-width: 750px) {
       padding-top: 6rem;
     }
+  }
+  svg {
+    padding-right: 21px;
   }
 `;
 

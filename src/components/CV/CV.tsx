@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 import { BorderWrapper } from "../BorderWrapper";
 import { DivWrapper } from "../DivWrapper";
+import File from "../icons/File";
+import { IconWrapper } from "../IconWrapper";
 
 interface CVProps {
   className?: string;
@@ -11,7 +13,10 @@ const CV = ({ className, id }: CVProps) => {
   return (
     <div className={className} id={id}>
       <div>
-        <h1>CV</h1>
+        <IconWrapper>
+          <File />
+          <h1>CV</h1>
+        </IconWrapper>
         <DivWrapper>
           <h2>Skills</h2>
           <ul>
@@ -115,6 +120,9 @@ const StyledCV = styled(CV)`
       line-height: 2;
       font-weight: 600;
     }
+  }
+  svg {
+    padding-right: 21px;
   }
 `;
 
