@@ -32,16 +32,18 @@ const StyledHeader = styled(Header)`
   justify-content: center;
   align-items: center;
   width: 40%;
-  border-bottom: 1px solid #4d4d4e;
+  border-bottom: 2px solid rgba(77, 77, 78, 0.2);
   padding-bottom: 60px;
   > div {
     text-align: left;
     font-weight: bold;
     h1 {
       font-size: 70px;
+      margin-bottom: 0;
       color: #d41919;
     }
     p {
+      margin-top: 17px;
       font-size: 22px;
     }
     strong {

@@ -17,7 +17,7 @@ const References = ({ className, id }: ReferencesProps) => {
           <Award />
           <h1>References</h1>
         </IconWrapper>
-        <DivWrapper>
+        <BorderWrapper>
           <p>
             “Like many tech businesses globally, challenging economic
             circumstances have led us to make the difficult decision to
@@ -28,7 +28,7 @@ const References = ({ className, id }: ReferencesProps) => {
           </p>
           <h2>Suzi Archer</h2>
           <h3>Staff Director, Huler</h3>
-        </DivWrapper>
+        </BorderWrapper>
         <BorderWrapper>
           <p>
             “From the moment Chloe joined our team, her level of enthusiasm and

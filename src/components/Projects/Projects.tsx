@@ -67,7 +67,7 @@ const Projects = ({ className, id }: ProjectsProps) => {
           <Briefcase />
           <h1>Projects</h1>
         </IconWrapper>
-        <DivWrapper>
+        <BorderWrapper>
           <ProjectCard
             src={HulerDays}
             alt="HulerDays landing page"
@@ -76,7 +76,7 @@ const Projects = ({ className, id }: ProjectsProps) => {
             bttnText="View in GitHub"
             href="https://github.com/chhhloeeee/HulerDays"
           />
-        </DivWrapper>
+        </BorderWrapper>
         <BorderWrapper>
           <ProjectCard
             src={Calculator}
