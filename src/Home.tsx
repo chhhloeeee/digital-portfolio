@@ -4,7 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import CV from "./components/CV/CV";
-import References from "./components/References/References";
+import References from "./components/References";
 import StyledHeader from "./components/Header";
 
 interface HomeProps {

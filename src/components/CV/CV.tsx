@@ -72,7 +72,7 @@ const CV = ({ className, id }: CVProps) => {
 const StyledCV = styled(CV)`
   position: relative;
   display: block;
-  padding-top: 119px;
+  padding-top: 138px;
   background-color: #f5f5f5;
   padding-bottom: 84px;
   text-align: left;

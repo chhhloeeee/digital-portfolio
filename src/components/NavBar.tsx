@@ -35,7 +35,6 @@ const StyledNavBar = styled(NavBar)`
   a {
     float: none;
     display: inline-block;
-    color: black;
     text-align: center;
     padding: 5px 16px;
     text-decoration: none;

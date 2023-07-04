@@ -110,13 +110,12 @@ const Projects = ({ className, id }: ProjectsProps) => {
 const StyledProjects = styled(Projects)`
   position: relative;
   min-height: 70vh;
-  font-size: 20px;
   text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
   > div {
-    padding-top: 2rem;
+    padding-top: 138px;
     @media (max-width: 750px) {
       padding-top: 6rem;
     }
