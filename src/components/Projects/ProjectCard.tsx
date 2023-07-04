@@ -25,7 +25,7 @@ const ProjectCard = ({
       <h2>{title}</h2>
       <div>
         <img src={src} alt={alt}></img>
-        <p>{content}</p>
+        <div>{content}</div>
         <a href={href} target="_blank" rel="noopener noreferrer">
           {bttnText}
         </a>
